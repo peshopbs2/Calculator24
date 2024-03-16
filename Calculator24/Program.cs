@@ -35,24 +35,24 @@ Console.Write("b = ");
 int b = int.Parse(Console.ReadLine());
 
 Console.Write("Operation (+, -, *, /, ^): ");
-char op = Console.ReadKey().KeyChar;
+string op = Console.ReadLine();
 
 double result = 0;
 switch (op)
 {
-    case '+':
+    case "+":
         result = Add(a, b);
         break;
-    case '-':
+    case "-":
         result = Subtract(a, b);
         break;
-    case '*':
+    case "*":
         result = Multiply(a, b);
         break;
-    case '/':
+    case "/":
         result = Divide(a, b);
         break;
-    case '^':
+    case "^":
         result = Power(a, b);
         break;
     default:
