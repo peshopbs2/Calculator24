@@ -3,12 +3,12 @@
     return a + b;
 }
 
-int Multiply(int a, int b)
+double Multiply(double a, double b)
 {
     return a * b;
 }
 
-int Divide(int a, int b)
+double Divide(double a, double b)
 {
     if (b == 0)
     {
