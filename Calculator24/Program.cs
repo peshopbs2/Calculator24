@@ -34,7 +34,7 @@ int a = int.Parse(Console.ReadLine());
 Console.Write("b = ");
 int b = int.Parse(Console.ReadLine());
 
-Console.Write("Operation (+, -, *, /): ");
+Console.Write("Operation (+, -, *, /, ^): ");
 char op = Console.ReadKey().KeyChar;
 
 double result = 0;
@@ -51,6 +51,9 @@ switch (op)
         break;
     case '/':
         result = Divide(a, b);
+        break;
+    case '^':
+        result = Power(a, b);
         break;
     default:
         Console.WriteLine("Invalid operation");
