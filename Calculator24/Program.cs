@@ -22,3 +22,42 @@ double Subtract(double a, double b)
 {
     return a - b;
 }
+
+double Power(double a, double b)
+{
+    return Math.Pow(a, b);
+}
+
+Console.Write("a = ");
+int a = int.Parse(Console.ReadLine());
+
+Console.Write("b = ");
+int b = int.Parse(Console.ReadLine());
+
+Console.Write("Operation (+, -, *, /, ^): ");
+string op = Console.ReadLine();
+
+double result = 0;
+switch (op)
+{
+    case "+":
+        result = Add(a, b);
+        break;
+    case "-":
+        result = Subtract(a, b);
+        break;
+    case "*":
+        result = Multiply(a, b);
+        break;
+    case "/":
+        result = Divide(a, b);
+        break;
+    case "^":
+        result = Power(a, b);
+        break;
+    default:
+        Console.WriteLine("Invalid operation");
+        break;
+}
+Console.WriteLine();
+Console.WriteLine(result);
